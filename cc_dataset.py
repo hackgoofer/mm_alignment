@@ -91,4 +91,6 @@ class CCDataset(Dataset):
         return {
             "img_feat": torch.tensor(annotation["features"]),
             "text_feat": text_feat,
+            "image_id": str(image_id),
+            "caption": caption
         }
